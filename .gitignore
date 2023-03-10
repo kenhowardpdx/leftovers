@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 /bazel-out
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Node
 /node_modules
@@ -40,3 +43,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Python
+.Python
+wheels/
+.venv

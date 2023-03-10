@@ -69,10 +69,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "leftovers:build:production"
+              "browserTarget": "leftovers:build:production",
+              "proxyConfig": "angular/proxy.conf.json"
             },
             "development": {
-              "browserTarget": "leftovers:build:development"
+              "browserTarget": "leftovers:build:development",
+              "proxyConfig": "angular/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
