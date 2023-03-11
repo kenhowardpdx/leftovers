@@ -1,5 +1,4 @@
 from flask import Flask
-import json
 
 app = Flask(__name__)
 
@@ -8,4 +7,4 @@ def hello_world():
     data = {
         "message": "hello, world",
     }
-    return json.dumps(data)
+    return data
