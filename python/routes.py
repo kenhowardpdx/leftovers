@@ -1,6 +1,5 @@
-from flask import Flask
-
-app = Flask(__name__)
+from config import app
+from models import *
 
 @app.route("/")
 def hello_world():
@@ -8,3 +7,7 @@ def hello_world():
         "message": "hello, world",
     }
     return data
+
+@app.route("/users")
+def users():
+    return User.query.all()
